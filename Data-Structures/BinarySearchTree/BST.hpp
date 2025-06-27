@@ -100,13 +100,20 @@ Node<T>* BinarySearchTree<T>::_remove(Node<T>* current, const T& value) {
 	}
 	else {
 		if (!current->left && !current->right) {
+			delete current;
 			return nullptr;
 		}
 		if (!current->left) {
-			return current->right;
+			auto temp = current->right;
+			current->right = nullptr;
+			delete current;
+			return temp;
 		}
 		if (!current->right) {
-			return current->left;
+			auto temp = current->left;
+			current->left = nullptr;
+			delete current;
+			return temp;
 		}
 
 		Node<T>* iter = current->right;
