@@ -23,6 +23,8 @@ public:
 		: data(value), left(left), right(right) { }
 
 	bool search(const T& val) const;
+	// add - idea - add to the first empty spot on a level
+
 
 	void printInOrder();
 	void printPreOrder();
