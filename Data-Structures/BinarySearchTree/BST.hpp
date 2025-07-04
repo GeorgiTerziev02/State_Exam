@@ -107,6 +107,7 @@ Node<T>* BinarySearchTree<T>::_remove(Node<T>* current, const T& value) {
 		}
 		if (!current->left) {
 			auto temp = current->right;
+			// needed because deleting the node deletes also the children
 			current->right = nullptr;
 			delete current;
 			return temp;
