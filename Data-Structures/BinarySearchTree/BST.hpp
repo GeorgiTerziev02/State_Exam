@@ -200,6 +200,15 @@ void BinarySearchTree<T>::bfs() const {
 	}
 }
 
+// in case you want cc and op=
+Node<int>* deepCopy(const Node<int>* curr) {
+	if (!curr) {
+		return nullptr;
+	}
+
+	return new Node<int>(curr->value, deepCopy(curr->left), deepCopy(curr->right));
+}
+
 int main() {
 	std::vector<int> v;
 	BinarySearchTree<int> bst;
