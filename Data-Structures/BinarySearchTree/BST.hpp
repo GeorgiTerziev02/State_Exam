@@ -36,7 +36,7 @@ private:
 	void _dfs(const Node<T>* current) const;
 public:
 	BinarySearchTree() = default;
-	BinarySearchTree(const BinarySearchTree<T>& other) = delete;
+	BinarySearchTree(const BinarySearchTree<T>& other) = delete; // use the deepCopy func at the end if you want to implement them
 	BinarySearchTree<T>& operator=(const BinarySearchTree<T>& other) = delete;
 	~BinarySearchTree() { free(); }
 
