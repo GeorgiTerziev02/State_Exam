@@ -14,6 +14,8 @@ struct Node {
 		: value(value), left(left), right(right) { }
 	Node(const Node<T>& other) = delete;
 	Node& operator=(const Node<T>& other) = delete;
+
+	// the only benefit from this destr is that you can easily delete the whole tree
 	~Node() {
 		free();
 	}
