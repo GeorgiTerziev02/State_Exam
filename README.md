@@ -1,5 +1,7 @@
 # Материали, които използвахме за държавния
 
+Go to: https://github.com/Justsvetoslavov/FMI-State-Exam-Prep/
+
 Успех!
 
 Каквото не е тука е на драйв.
