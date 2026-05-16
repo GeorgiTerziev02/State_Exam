@@ -1,6 +1,6 @@
-# Материали, които използвахме за държавния
+# [Deprecated repo] Материали, които използвахме за държавния
 
-Go to: https://github.com/Justsvetoslavov/FMI-State-Exam-Prep/
+**Go to: https://github.com/Justsvetoslavov/FMI-State-Exam-Prep/**
 
 Успех!
 
